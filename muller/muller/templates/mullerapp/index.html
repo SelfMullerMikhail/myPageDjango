@@ -1,0 +1,696 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'mullerapp/css/styleMain3.CSS' %}">
+    <link rel="stylesheet" href="{% static 'mullerapp/css/styleHelper1.css' %}">
+    <link rel="stylesheet" href="{% static 'mullerapp/css/fullpage.css' %}">
+
+    <title>My web</title>
+</head>
+
+<body>
+    <div id="fullpage">
+        <!-- 1:1 MAIN s-->
+        
+        <div class="section" id="firstpage">
+            <section id="hero">
+                <div class="lockScreen"></div>
+                <ul class="menu">
+                    <li> <a href="#" class="head commentsButton">Comments</a></li>
+                    <li> <a href=" #" class="head messege " id="cap">Connection</a>
+                    </li>
+
+                    <li> <a href="#" class="head contactsButtom" id="cap">Contacts</a>
+                        <div>
+                            <span class="number">
+                                <a href="#">phone</a>
+                                <h2 style="display: none; color:whitesmoke; font-size: 140%; padding-left: 1%;"
+                                    class="numberphone">
+                                    905075310855
+                                </h2>
+                                <h2 style="display: none; color:burlywood; padding-left: 10%; " class="copy">Copy
+                                </h2>
+                            </span>
+                            <a href="#" class="whatsapp">WhatsApp</a>
+                            <a href="#" class="instagramm">Instagram</a>
+                            <a href="#" class="telegramm">Telegram</a>
+                            <a href="#" class="twitter">Twitter</a>
+                            <a href="#" class="github">GitHub</a>
+                            <a href="#" class="discord">Discord</a>
+                            <a href="#" class="linkedin">LinkedIn</a>
+                            <a href="#" class="hhanter">Hhanter</a>
+
+
+
+                        </div>
+                    </li>
+                    <li> <a href="#hobbySport" class="head" id="cap">Hobby</a>
+                        <div>
+                            <a href="#hobbySport">Sport</a>
+                            <a href="#hobbyPolitics">Politics</a>
+                            <a href="#hobbySpace">Space</a>
+                        </div>
+                    </li>
+                    <li> <a href="#experienceBartender" class="head" id="cap">Experience</a>
+                        <div>
+                            <a href="#experienceBartender">Bartender</a>
+                            <a href="#experienceChefBarista">Meneger/barista</a>
+                            <a href="#experienceSalesmanager">Sales manager</a>
+                            <a href="#experienceCrypto">Crypto</a>
+                            <a href="#experienceProgrammer">Programmer</a>
+                        </div>
+                    </li>
+
+                    <li> <a href="#skillsPython" class="head skillsButtom" id="cap">Skills</a>
+                        <div>
+                            <a href="#skillsPython">Python</a>
+                            <a href="#skillsHtmlCss">Html/css</a>
+                            <a href="#skillsJavaScript">Java Script</a>
+                            <a href="#skillsMysqlSqlite">Mysql/sqlite</a>
+                            <a href="#skillsGithub" style="color: white;">github</a>
+                            <a href="#skillsNpm" style="color: white;">npm</a>
+                            <a href="#skillsEnglish" style="color: white;">English B1</a>
+                            <a href="#skillsEnglish" style="color: white;">Drive a car/motorcycle</a>
+
+                        </div>
+                    </li>
+                    <li> <a href="#educationSchool" class="head" id="cap">Education</a>
+                        <div>
+                            <a href="#educationSchool">School</a>
+                            <a href="#educationCollege">College</a>
+                            <a href="#educationGeekBrains">Geek Brains</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="hero container">
+                    <section class="myNameIs">
+                        <h1>Hey,</h1>
+                        <h1>my name is</h1>
+                        <h1>Mihail</h1>
+                        <h1>Korniushenko</h1>
+                        <a href="{% static 'mullerapp/Mihail_Korniushenko_CV.pdf' %}" download="Mihail_Korniushenko" type="button" class="cta">
+                            Curriculum vitae</a>
+                    </section>
+                </div>
+
+                <div class="writeMe borderCollor">
+                    <form action="mail8.php" id="formMessege" class="hid" method="post">
+                        <input class="writeMeName " type="name" placeholder="Name" name="name">
+                        <input class="writeMeMail" type="email" placeholder="email" name="email">
+                        <div class="choice">
+                            <input type="radio" value="Question" name="Question" id="whoAreYou1">
+                            <label for="whoAreYou1">Question</label>
+                            <input type="radio" value="Proposal" name="Question" id="whoAreYou2">
+                            <label for="whoAreYou1">Proposal</label>
+                        </div>
+                        <textarea class="textMessage" name="text" id="" cols="30" rows="10"
+                            placeholder="text"></textarea>
+                        <input class="addFile" accept=".jpg .png .jpeg .gif .pdf" type="file" name="addFile" id="#">
+                        <button class="sendMessage" type="submit"> SEND</button>
+                    </form>
+
+                </div>
+                <div class="comments2 hidden">
+                    <div class="disqusPosition" id="disqus_thread"></div>
+                </div>
+
+
+
+
+                <!-- <img class="strelka1 displaOn" src="img/strelka.svg" alt="">
+                <div class="iSearchWork ">
+                    <p class=" iSearchWorkText displaOn">Now I'm looking for a job. Please look here, that's what I can
+                        do.
+                    </p>
+                </div>
+
+                <img class="strelka2" src="img/strelka.svg" alt="">
+                <div class="writeToMe">
+                    <p class="contactMe">Don't forget write to me
+                        do.
+                    </p>
+                </div>
+
+                <img class="strelka3" src="img/strelka.svg" alt="">
+                <div class="whatsAppBetter">
+                    <p class="whatsAppText">Whats App is better :)
+                    </p>
+                </div> -->
+
+
+
+            </section>
+
+            <!-- HOBBY -->
+        </div>
+        <div class="section" id="hobby">
+            <!-- 2:2  HOBBY-SPORT -->
+            <div class="slide" id="hobbySport">
+                <div class="return">
+                    <a href="#firstpage">Return</a>
+                </div>
+                <div class="mainHeader">
+                    <h2>Sport</h2>
+                </div>
+                <div class="bartenderJobs">
+
+                    <span><a href="#">Weightlifting</a>
+                        <h1></h1>
+                        <p>Professionally engaged in weightlifting. He reached the level of a candidate master of
+                            sports, but was injured and stopped practicing.</p>
+                    </span>
+                    <span><a href="#">Rowing</a>
+                        <h1></h1>
+                        <p>In the spring we organized a team and spent the whole summer rowing. And in the fall we
+                            competed with other teams. This is a very team sport that knows how to unite!</p>
+                    </span>
+                    <span><a href="#">Snowboarding</a>
+                        <h1></h1>
+                        <p>Winter without a snowboard is not winter. It's always a little, but you know how to enjoy the
+                            moment.</p>
+                    </span>
+                    <span><a href="#">Skating</a>
+                        <h1></h1>
+                        <p>A cool hobby to have a great time with friends. By the way, a great place for dating)</p>
+                    </span>
+                    <span><a href="#">longboarding</a>
+                        <h1></h1>
+                        <p>Passersby hate you, but what can I do? Riding a longboard is so cool. But dangerous, be
+                            careful!</p>
+                    </span>
+                    <span><a href="#">Swiming</a>
+                        <h1></h1>
+                        <p>It's a very useful activity, and after it you want to eat so much. I recommend it!!</p>
+                    </span>
+                </div> 
+                <img class="s2p1photo1 expiriencePhoto" src="{% static 'mullerapp/img/hobby/sport/skates.jpeg' %}" alt="">
+                <img class="s2p1photo2 expiriencePhoto" src="{% static 'mullerapp/img/hobby/sport/2022-09-22_21-00-28.png' %}" alt="">
+                <img class="s2p1photo3 expiriencePhoto" src="{% static 'mullerapp/img/hobby/sport/uW7LloNZxs4.jpg' %}" alt="">
+                <img class="s2p1photo4 expiriencePhoto" src="{% static 'mullerapp/img/hobby/sport/snowboarding.jpeg' %}" alt="">
+                <img class="s2p1photo5 expiriencePhoto" src="{% static 'mullerapp/img/hobby/sport/-PyDNL9Aw1U.jpg' %}" alt=""> 
+            </div>
+
+
+            <!-- 2:3  HOBBY-POLITICS -->
+            <div class="slide" id="hobbyPolitics">
+                <div class="return">
+                    <a href="#firstpage">Return</a>
+                </div>
+                <div class="mainHeader">
+                    <h2>Politics - Active life position
+                    </h2>
+                </div>
+                <div class="bartenderJobs">
+                    <span><a
+                            href="https://www.politico.com/news/magazine/2022/04/07/russians-putin-fleeing-00023482">Politics</a>
+                    </span>
+
+                    <span>
+                        <a
+                            href="https://www.themoscowtimes.com/2022/06/11/anti-war-russians-leverage-ancestry-risk-arrest-to-reach-europe-a77858#:~:text=Mikhail%2C%2025%2C%20a%20barista%20from%20Komsomolsk%2Don%2DAmur%20in%20the%20Far%20East%20who%20supports%20jailed%20Kremlin%20critic%20Navalny%2C%20left%20Russia%20for%20the%20first%20time%20after%20the%20start%20of%20the%20invasion.%C2%A0">
+                            The Moscow Times</a></span>
+                    <span>
+                        <a href="https://youtu.be/whu7gF1eL58?t=1081">BBC</a>
+                        <p style="width: 80%;">Politics is an integral part of my life.
+                            I am an activist, I always take part in important events and always go to the polls.
+                            I consider it my duty to defend civil rights, to be educated and to share knowledge with
+                            others.</p>
+                    </span>
+                </div>
+                <img class="s2p3photo1 expiriencePhoto" src="{% static 'mullerapp/img/hobby/politics/trust.jpeg' %}" alt="">
+                <img class="s2p3photo2 expiriencePhoto" src="{% static 'mullerapp/img/hobby/politics/2022-09-22_22-04-09.png'%}" alt="">
+                <img class="s2p3photo3 expiriencePhoto" src="{% static 'mullerapp/img/hobby/politics/6.webp'%}" alt="">
+                <img class="s2p3photo4 expiriencePhoto" src="{% static 'mullerapp/img/hobby/politics/3.png'%}" alt="">
+                <img class="s2p3photo5 expiriencePhoto" src="{% static 'mullerapp/img/hobby/politics/4.png'%}" alt="">
+            </div>
+
+            <!-- 2:4 SPACE -->
+            <div class="slide" id="hobbySpace">
+                <div class="return">
+                    <a href="#firstpage">Return</a>
+                </div>
+                <div class="mainHeader">
+                    <h2>Space</h2>
+                </div>
+
+                <div class="bartenderJobs">
+                    <span><a href="https://www.youtube.com/c/vsauce1">Vsauce</a>
+                        <h1></h1>
+                        <p>The first YouTube channel that ignited my love for science.</p>
+                    </span>
+                    <span><a href="https://www.youtube.com/c/КосмосПросто">Just Space</a>
+                        <h1></h1>
+                        <p>Cool Ukrainian guys who talk in great detail and talk about space in a very interesting way.
+                        </p>
+                    </span>
+                    <span><a href="https://www.youtube.com/c/AlphaCentauriChannel">Alpha Centauri</a>
+                        <h1></h1>
+                        <p>Highly qualified guys talk about new events during the week.</p>
+                    </span>
+                    <span><a href="https://www.youtube.com/user/toplesofficial">Toples</a>
+                        <h1></h1>
+                        <p>And this channel has changed my thinking and blows up my brain every time.</p>
+                    </span>
+                </div>
+                <img class="s2p4photo1 expiriencePhoto" src="{% static 'mullerapp/img/hobby/space/2022-09-22_21-00-05.png' %}" alt="">
+            </div>
+        </div>
+
+
+        <!-- 3:1  EXPERIENCE-->
+
+        <div class="section" id="section3">
+            <!-- EXPERIENCE--BARTENDER 3:2 -->
+            <div class="slide" id="experienceBartender">
+                <div class="return">
+                    <a href="#firstpage">Return</a>
+                </div>
+                <div class="mainHeader">
+                    <h2>Bartender</h2>
+                </div>
+                <img class="s3p2photo1 expiriencePhoto" src="{% static 'mullerapp/img/expirience/bartender/ZumaRestorane.jpeg'%}" alt="">
+                <img class="s3p2photo2 expiriencePhoto" src="{% static 'mullerapp/img/expirience/bartender/MZ4Pei2WAso.jpg'%}" alt="">
+                <img class="s3p2photo3 expiriencePhoto" src="{% static 'mullerapp/img/expirience/bartender/zumaFirst.jpeg'%}" alt="">
+                <img class="s3p2photo4 expiriencePhoto" src="{% static 'mullerapp/img/expirience/bartender/DSCF9868.jpg'%}" alt="">
+                <img class="s3p2photo5 expiriencePhoto" src="{% static 'mullerapp/img/expirience/bartender/2022-07-04_19-56-09.png'%}" alt="">
+                <div class="bartenderJobs">
+                    <span><a href="https://vlad.allcafe.ru/catalog/moroshka/">Moroshka</a>
+                        <h1>Bartender 2014-2015 Vladivostok</h1>
+                        <p>This was my first experience in a cafe. The first money. I learned what it's like to work 12
+                            hours on my feet.</p>
+                    </span>
+                    <span><a href="https://bistro8.restexpert.ru/">Bistro8</a>
+                        <h1>Bartender 2015-2015 Vladivostok </h1>
+                        <p>Wine bar, I started to understand wine.</p>
+                    </span>
+                    <span><a href="https://pazzocoffeelab.restexpert.ru/">Pazzo</a>
+                        <h1>Bartender 2015-2016 Vladivostok</h1>
+                        <p>The place where I grew up professionally, learned how to make coffee and became a
+                            professional bartender.
+                        </p>
+                    </span>
+                    <span><a href="https://restaurantguru.ru/Rocks-Cocktail-Bar-Vladivostok">Rock's Cocktail
+                            Bar</a>
+                        <h1>Bartender 2016-2017 Vladivostok</h1>
+                        <p>Night rock bar. It was hard, but fun. There will be something to tell the children.</p>
+                    </span>
+
+                    <span><a href="https://zumavl.ru/menu/">Zuma Restaurant</a>
+                        <h1>Bartender 2017-2018 Vladivostok</h1>
+                        <p>A restaurant of a completely different level. International. In this place I learned
+                            restraint, responsibility, kindness, caring, teamwork. You will be in Vladivostok,
+                            be sure to visit!
+                        </p>
+                    </span>
+
+                </div>
+            </div>
+
+
+
+            <!-- EXPIRIENCE CHEF-BARISTA 3:3 -->
+            <div class="slide" id="experienceChefBarista">
+                <div class="return">
+                    <a href="#firstpage">Return</a>
+                </div>
+                <div class="mainHeader">
+                    <h2>Coffee meneger/barista</h2>
+                </div>
+
+                <div class="bartenderJobs">
+                    <span><a href="https://www.instagram.com/biblioteka.coffee/">Coffee Biblioteka</a>
+                        <h1>Opener 2018-2019 Vladivostok</h1>
+                        <p>A coffee shop that I opened myself. It was a unique experience to create your own team.
+                            United people. I created an idea and implemented it. Here I really felt the burden of
+                            responsibility.
+                        </p>
+                    </span>
+                    <span><a href="https://www.instagram.com/literate_coffee/?hl=ru">Litterate Coffee</a>
+                        <h1>Chef-barista 2019-2020 Moscow</h1>
+                        <p>Am I a barista chef in the very center of the capital? I didn't believe it, but life changed
+                            again.
+                        </p>
+                    </span>
+                    <span><a href="https://www.instagram.com/wakecup.ru/">WakeCup</a>
+                        <h1>Chef-barista 2020-2021 Moscow</h1>
+                        <p>Here I already manage a chain of coffee shops in the center of Moscow. I select and train
+                            people. I come up with new ideas and implement them. I feel my usefulness and the company is
+                            grateful to me.</p>
+                    </span>
+
+                    <span><a href="https://www.instagram.com/coffeeburo/">COFFEEBURO</a>
+                        <h1>Barmanager 2021-2022 Moscow</h1>
+                        <p>A popular place near Red Square. Together with the team, we are moving in the right
+                            direction. Everything is working out for us. We solve all the problems. The best management
+                            experience of my life.</p>
+                    </span>
+                    <span><a href="https://www.instagram.com/xyzcihangircoffee/">XYZ Coffee Guru</a>
+                        <h1>Barista 2022-2022 Moscow</h1>
+                        <p>A small cozy cafe in the center of Istanbul. Here I get to know a new culture, new
+                            interesting people. I find myself in situations of language and mental barrier, but I solve
+                            them.
+                        </p>
+                    </span>
+                </div>
+                <img class="s3p3photo1 expiriencePhoto" src="{% static 'mullerapp/img/expirience/Chef-barista/2022-09-24_12-08-01.png'%}"
+                    alt="">
+                <img class="s3p3photo2 expiriencePhoto" src="{% static 'mullerapp/img/expirience/Chef-barista/coffeeburo1.jpeg'%}" alt="">
+                <img class="s3p3photo3 expiriencePhoto" src="{% static 'mullerapp/img/expirience/Chef-barista/coffeeburo2.jpeg'%}" alt="">
+                <img class="s3p3photo4 expiriencePhoto" src="{% static 'mullerapp/img/expirience/Chef-barista/2022-09-24_12-08-58.png'%}"
+                    alt="">
+            </div>
+
+            <!-- EXPIRIENCE SALLESMANAGER 3:4 -->
+            <div class="slide" id="experienceSalesmanager">
+                <div class="return">
+                    <a href="#firstpage">Return</a>
+                </div>
+                <div class="mainHeader">
+                    <h2>Sales Manager </h2>
+                </div>
+                <div class="bartenderJobs">
+
+                    <span><a href="https://www.abacoffee.ru/"> 2018-2019 ABA Coffee Group Vladivostok</a>
+                        <h1>Sales manager/Traning/Coach</h1>
+                        <p>I am a representative of a large and important company. The company invests in me, and I
+                            try to work better.
+                            Here I got the skills of teaching, mentoring, leadership, communication. The ability to
+                            work out objections, to win people over.</p>
+                    </span>
+                </div>
+                <div></div>
+                <img class="s3p4photo1 expiriencePhoto" src="{% static 'mullerapp/img/expirience/SellesManager/2022-09-24_12-08-33.png'%}"
+                    alt="">
+                <img class="s3p4photo2 expiriencePhoto" src="{% static 'mullerapp/img/expirience/SellesManager/2022-09-25_21-56-04.png'%}"
+                    alt="">
+                <img class="s3p4photo3 expiriencePhoto" src="{% static 'mullerapp/img/expirience/SellesManager/neft.jpeg'%}" alt="">
+                <img class="s3p4photo4 expiriencePhoto" src="{% static 'mullerapp/img/expirience/SellesManager/2022-09-25_21-56-30.png'%}"
+                    alt="">
+                <img class="s3p4photo5 expiriencePhoto" src="{% static 'mullerapp/img/expirience/SellesManager//2022-09-25_21-56-54.png'%}"
+                    alt="">
+            </div>
+            <!-- EXPIRIENCE CRYPTO -->
+
+            <div class="slide" id="experienceCrypto">
+                <div class="return">
+                    <a href="#firstpage">Return</a>
+                </div>
+                <div class="mainHeader">
+                    <h2>Crypto</h2>
+                </div>
+                <div class="bartenderJobs crypto" style="width: 40%; height: 85%">
+                    <span style="width: 35%; position: absolute; left: 60%; top: 0%;">
+                        <h1 style="font-size: 300%">ICO</h1>
+                        <p>I study projects, ideas, team, investors, and weigh risks. Investing.</p>
+                        <a href="https://efinity.io/">Efinity</a>
+                        <a href="https://agoric.com/">Agoric</a>
+                        <a href="https://www.manta.network/">Manta</a>
+                        <a href="https://vestlab.io/tribal">Tribal</a>
+                    </span>
+
+
+                    <span style="width: 35%; position: absolute; left: 60%; top: 30%; ">
+                        <h1 style="font-size: 300%">Nodes</h1>
+                        <p>I study projects on the same principle. I put notes for these projects, providing computing
+                            power and maintaining decentralization.</p>
+                        <a href="https://rizon.world/">Rizon</a>
+                        <a href="https://www.thestratos.org/">Stratos</a>
+                        <a href="https://massa.net/">Massa</a>
+                        <a href="https://meson.network/">Meson</a>
+                        <a href="https://streamr.network/">Streamr</a>
+                        <a href="https://pontem.network/">Pontem</a>
+                    </span>
+
+                    <span style="position: absolute; left: 0%; top: 0%; width: 50%;">
+                        <h1 style="font-size:300%">Events</h1>
+                        <p>Various activities for these projects. Translations, articles, group support, testing.</p>
+                        <a href="https://eco.com/learn/introducing-eco">ECO</a>
+                        <!-- <p><a style="font-size:150%; color:cadetblue ;"
+                                href="https://www.youtube.com/watch?v=Fu7WD3FUJpI&t=70s">My Video</a></p> -->
+                        <a href="https://supraoracles.com/">SupraOracles</a>
+                        <a href="https://tgrade.finance/">Tgrade</a>
+                        <a href="https://goldfinch.finance/">Golfinch</a>
+                        <a href="https://golden.com/">Golden</a>
+                        <a href="https://www.calamari.network/">Calamari</a>
+                        <a href="https://moonbeam.network/">Moonbeam</a>
+                        <a href="https://astar.network/">Astar</a>
+                        <a href="https://parallel.fi/">Parallel</a>
+                        <a href="https://acala.network/">Acala</a>
+                        <a href="https://apps.karura.network/">Karura</a>
+                        <a href="https://kusama.network/">Kusama</a>
+                        <a href="https://polkadot.js.org/">Polkadot</a>
+                        <a href="https://moonbeam.network/">Moonbeam</a>
+                    </span>
+
+                </div>
+                <a href="https://www.youtube.com/watch?v=Fu7WD3FUJpI&t=70s"><img class="ECO"
+                        src="{% static 'mullerapp/img/expirience/Crypto/2022-09-29_23-05-19.png'%}" alt=""></a>
+                <img class="pontem expiriencePhoto" src="{% static 'mullerapp/img/expirience/Crypto/photo5388583003581692952.jpg'%}" alt="">
+            </div>
+
+
+            <!-- EXPIRIENCE PROGRAMMER -->
+            <div class=" slide" id="experienceProgrammer">
+                <div class="return">
+                    <a href="#firstpage">Return</a>
+                </div>
+                <div class="mainHeader">
+                    <h2>Programmer</h2>
+                </div>
+                <div class="bartenderJobs">
+
+                    <span><a href="#">Not yet</a>
+                        <h1></h1>
+                        <p>I haven't worked in any organization yet. But I really strive for it. I'm still
+                            just
+                            doing my own projects. I hope that over time I will delete this text and add a
+                            new
+                            experience here.
+                        </p>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 4:1 SKILLS -->
+        <div class="section" id="section4">
+            <!-- SKILLS Python -->
+            <div class="slide" id="skillsPython">
+                <div class="return">
+                    <a href="#firstpage">Return</a>
+                </div>
+                <div class="mainHeader">
+                    <h2>Python</h2>
+                </div>
+                <div class="bartenderJobs">
+                    <span><a href="https://github.com/preensikl/MedeleineWarGame">War Game</a>
+                        <h1> 2022 Istanbul </h1>
+                        <p>(Python)
+                            This project was written with the help of a guide. The goal of this project was to get
+                            to
+                            know object-oriented programming better. The main character here is a good friend of
+                            mine
+                            who is struggling with an infinite amount of Putin.
+                        </p>
+                    </span>
+                    <span><a href="https://github.com/preensikl/BurakSystem/tree/PossSystemSqLite/New_Project">Cash
+                            register system</a>
+                        <h1> 2022 Istanbul </h1>
+                        <p>(Python + SqLite)
+                            My first independent project. I created it for the cafe where I worked. There has never
+                            been
+                            a cash register system in this cafe before, but now there is. I would like to continue
+                            developing this project in my free time.
+                        </p>
+                    </span>
+                </div>
+                <img class="s4p1photo1 expiriencePhoto" src="{% static 'mullerapp/img/skills/Python/2022-09-26_13-10-51.png'%}" alt="">
+                <img class="s4p1photo2 expiriencePhoto" src="{% static 'mullerapp/img/skills/Python/2022-09-27_00-14-39.png'%}" alt="">
+                <img class="s4p1photo3 expiriencePhoto" src="{% static 'mullerapp/img/skills/Python/2022-09-27_00-10-59.png'%}" alt="">
+                <img class="s4p1photo4 expiriencePhoto" src="{% static 'mullerapp/img/skills/Python/2022-09-26_12-52-02.png'%}" alt="">
+                <img class="s4p1photo5 expiriencePhoto" src="{% static 'mullerapp/img/skills/Python/2022-09-26_12-48-41.png'%}" alt="">
+
+
+            </div>
+
+            <!-- SKILLS HtmlCss -->
+            <div class="slide" id="skillsHtmlCss">
+                <div class="return">
+                    <a href="#firstpage">Return</a>
+                </div>
+                <div class="mainHeader">
+                    <h2>Html/css</h2>
+                </div>
+                <div class="bartenderJobs">
+                    <span><a href="https://github.com/preensikl/myPage">My page</a>
+                        <h1> 2022 Istanbul </h1>
+                        <p>(HTML + CSS + JS)
+                            As a practice, I created this presentation site for myself. I hope there will be other
+                            work
+                            experience here in the future.
+                        </p>
+
+                    </span>
+                </div>
+                <img class="s4p2photo1 expiriencePhoto" src="{% static 'mullerapp/img/skills/html_CSS/2022-09-26_13-04-32.png'%}" alt="">
+            </div>
+
+            <!-- skills JavaScript -->
+            <div class="slide" id="skillsJavaScript">
+                <div class="return">
+                    <a href="#firstpage">Return</a>
+                </div>
+                <div class="mainHeader">
+                    <h2>Java Script</h2>
+                </div>
+                <div class="bartenderJobs">
+                    <span><a href="https://github.com/preensikl/JavaScript">Lessons</a>
+                        <h1> 2022 Istanbul</h1>
+                        <p>Practical lessons on JS. All my tasks are recorded on GitHub, and also JS is a little
+                            involved in this site.
+                        </p>
+                    </span>
+                </div>
+                <img class="s4p3photo1 expiriencePhoto" src="{% static 'mullerapp/img/skills/JS/2022-09-26_13-05-02.png'%}" alt="">
+                <img class="s4p3photo2 expiriencePhoto" src="{% static 'mullerapp/img/skills/JS/2022-09-26_12-56-48.png'%}" alt="">
+                <img class="s4p3photo3 expiriencePhoto" src="{% static 'mullerapp/img/skills/JS/2022-09-26_12-58-23.png'%}" alt="">
+            </div>
+
+            <!-- skills MySql/SqlLite -->
+            <div class="slide" id="skillsMysqlSqlite">
+                <div class="return">
+                    <a href="#firstpage">Return</a>
+                </div>
+                <div class="mainHeader">
+                    <h2>Mysql/sqlite</h2>
+                </div>
+                <div class="bartenderJobs">
+                    <span><a href="https://github.com/preensikl/BurakSystem_BD">Data Base of cash register
+                            system</a>
+                        <h1> 2022 Istanbul</h1>
+                        <p>Initially, my cash register system was completely written in MySQL.
+                            Only then I decided to do it with visualization in Python and redid it
+                            on SQLite for more convenience.
+                        </p>
+                    </span>
+                </div>
+                <img class="s4p4photo1 expiriencePhoto" src="{% static 'mullerapp/img/skills/dataBase/2022-09-26_13-04-02.png'%}" alt="">
+                <img class="s4p4photo2 expiriencePhoto" src="{% static 'mullerapp/img/skills/dataBase/2022-09-26_18-34-47.png'%}" alt="">
+                <img class="s4p4photo3 expiriencePhoto" src="{% static 'mullerapp/img/skills/dataBase/posterposs.png'%}" alt="">
+            </div>
+        </div>
+
+        <!-- Shcool  -->
+        <div class="section" id="section5">
+            <div class="slide" id="educationSchool">
+                <div class="return">
+                    <a href="#firstpage">Return</a>
+                </div>
+
+                <div class="mainHeader">
+                    <h2>Shool</h2>
+                </div>
+                <div class="bartenderJobs">
+
+                    <span><a href="https://school23kms.ru/">School #23</a>
+                        <h1>2004-2013 Komsomolsk-on-Amure</h1>
+                        <p>I studied at a school with an artistic and aesthetic cycle.
+                            We were engaged in drawing for 9 years, but I never learned how to draw.
+                            We had a prestigious school by the standards of the city. I didn't finish 11th grade
+                            because
+                            I didn't have the patience to wait, and I wanted to develop here and now.</p>
+                    </span>
+                </div>
+                <img class="s5p1photo1 expiriencePhoto" src="{% static 'mullerapp/img/education/school/Аттестат2.jpeg'%}" alt="">
+                <img class="s5p1photo2 expiriencePhoto" src="{% static 'mullerapp/img/education/school/Аттестат3.jpeg'%}" alt="">
+                <img class="s5p1photo3 expiriencePhoto" src="{% static 'mullerapp/img/education/school/photo1.jpeg'%}" alt="">
+                <img class="s5p1photo4 expiriencePhoto" src="{% static 'mullerapp/img/education/school/photo2.png'%}" alt="">
+                <img class="s5p1photo5 expiriencePhoto" src="{% static 'mullerapp/img/education/school/photo3.jpg'%}" alt="">
+                <img class="s5p1photo6 expiriencePhoto" src="{% static 'mullerapp/img/education/school/sprot.jpg'%}" alt="">
+            </div>
+
+            <!-- College -->
+            <div class="slide" id="educationCollege">
+                <div class="return">
+                    <a href="#firstpage">Return</a>
+                </div>
+
+                <div class="mainHeader">
+                    <h2>College </h2>
+                </div>
+                <div class="bartenderJobs">
+
+                    <span><a href="https://suz-ppk.ru/"> 2013-2017 Regional State Budgetary Institution "Primorsky
+                            Polytechnic
+                            College" Vladivostok</a>
+                        <h1>Information system</h1>
+                        <p>The first independent life in a strange city. In college we studied C++, C#, 1C. Computer
+                            device and IT theory.</p>
+                        <p>I was on the college bench press team.</p>
+                    </span>
+                </div>
+                <img class="s5p2photo1 expiriencePhoto" src="{% static 'mullerapp/img/education/college/diploma1.jpeg'%}" alt="">
+                <img class="s5p2photo2 expiriencePhoto" src="{% static 'mullerapp/img/education/college/diploma2.jpeg'%}" alt="">
+                <img class="s5p2photo3 expiriencePhoto" src="{% static 'mullerapp/img/education/college/diploma3.jpeg'%}" alt="">
+                <img class="s5p2photo4 expiriencePhoto" src="{% static 'mullerapp/img/education/college/diploma4.jpeg'%}" alt="">
+                <img class="s5p2photo5 expiriencePhoto" src="{% static 'mullerapp/img/education/college/ZHqBhsWdAM4.jpg'%}" alt="">
+            </div>
+
+            <!-- Geek Brains -->
+            <div class="slide" id="educationGeekBrains">
+                <div class="return">
+                    <a href="#firstpage">Return</a>
+                </div>
+                <div class="mainHeader">
+                    <h2>Online courses</h2>
+                </div>
+                <div class="bartenderJobs">
+
+                    <span><a href="https://gb.ru/">2021-2022... Geek Brains </a>
+                        <h1>Python developer</h1>
+                        <p>Here I study Python, MySQL, HTML, CSS, JavaScript. Git, NPM. Django Framework. Agile,
+                            Scrum.
+
+                            This course gave a good start, showed the direction. But 80% of knowledge comes in the
+                            process of self-study.</p>
+                    </span>
+                </div>
+                <div></div>
+                <img class="s5p3photo1 expiriencePhoto" src="{% static 'mullerapp/img/education/geekbrains/1.png'%}" alt="">
+                <img class="s5p3photo2 expiriencePhoto" src="{% static 'mullerapp/img/education/geekbrains/2.png'%}" alt="">
+                <img class="s5p3photo3 expiriencePhoto" src="{% static 'mullerapp/img/education/geekbrains/3.png'%}" alt="">
+                <img class="s5p3photo4 expiriencePhoto" src="{% static 'mullerapp/img/education/geekbrains/4.png'%}" alt="">
+                <img class="s5p3photo5 expiriencePhoto" src="{% static 'mullerapp/img/education/geekbrains/5.png'%}" alt="">
+                <img class="s5p3photo6 expiriencePhoto" src="{% static 'mullerapp/img/education/geekbrains/6.png'%}" alt="">
+                <img class="s5p3photo7 expiriencePhoto" src="{% static 'mullerapp/img/education/geekbrains/7.png'%}" alt="">
+                <img class="s5p3photo8 expiriencePhoto" src="{% static 'mullerapp/img/education/geekbrains/8.png'%}" alt="">
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+
+
+    <script src="{% static 'mullerapp/js/functionMenu4.js' %}"></script>
+    <script src="{% static 'mullerapp/js/functionMain.JS' %}"></script>
+    <script src="{% static 'mullerapp/js/fullpage.js' %}"></script>
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', { sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'] });
+    </script>
+    <script>
+        (function () {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://mihailkorniushenko-ru.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+
+</body>
+
+
+</html>
